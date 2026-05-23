@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stores by Uday | Demo Pages for Influencers & Small Businesses</title>
+  <meta name="description" content="Professional one-page websites for influencers and small businesses. Free demo first, quick delivery, Instagram DM CTA, booking CTA, and affordable pricing by Stores by Uday." />
+  <meta property="og:title" content="Stores by Uday" />
+  <meta property="og:description" content="Professional demo pages for creators and small businesses — built to convert profile visitors into real enquiries." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://picsum.photos/seed/storesbyudayog/1200/630" />
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&f[]=zodiak@400,500,700&display=swap" rel="stylesheet" />
+  <style>
+    :root, [data-theme="light"] {
+      --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+      --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+      --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+      --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+      --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+      --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3.5rem);
+      --text-3xl: clamp(2.5rem, 1rem + 4vw, 5rem);
+      --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem; --space-4: 1rem; --space-5: 1.25rem; --space-6: 1.5rem; --space-8: 2rem; --space-10: 2.5rem; --space-12: 3rem; --space-16: 4rem; --space-20: 5rem; --space-24: 6rem;
+      --color-bg: #f6f2ed;
+      --color-surface: #fbf8f4;
+      --color-surface-2: #fffdf9;
+      --color-surface-offset: #efe9e1;
+      --color-border: #d8d1c8;
+      --color-divider: #e2dbd3;
+      --color-text: #1f1a16;
+      --color-text-muted: #6f6963;
+      --color-text-faint: #aaa299;
+      --color-text-inverse: #faf7f2;
+      --color-primary: #0d6d67;
+      --color-primary-hover: #0a5651;
+      --color-primary-active: #093b38;
+      --color-primary-highlight: #d1e3df;
+      --color-success: #427326;
+      --radius-sm: 0.375rem; --radius-md: 0.75rem; --radius-lg: 1rem; --radius-xl: 1.5rem; --radius-full: 9999px;
+      --shadow-sm: 0 1px 2px rgba(17, 14, 10, 0.06);
+      --shadow-md: 0 10px 30px rgba(17, 14, 10, 0.09);
+      --shadow-lg: 0 22px 60px rgba(17, 14, 10, 0.15);
+      --font-display: 'Zodiak', Georgia, serif;
+      --font-body: 'General Sans', Inter, sans-serif;
+      --content: 1180px;
+      --transition: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    [data-theme="dark"] {
+      --color-bg: #141210;
+      --color-surface: #1b1917;
+      --color-surface-2: #211e1b;
+      --color-surface-offset: #26221f;
+      --color-border: #3a3530;
+      --color-divider: #2a2623;
+      --color-text: #ece6df;
+      --color-text-muted: #aea59a;
+      --color-text-faint: #786f67;
+      --color-text-inverse: #171411;
+      --color-primary: #5aa8a3;
+      --color-primary-hover: #76bbb7;
+      --color-primary-active: #92c9c5;
+      --color-primary-highlight: #2d3b3a;
+      --shadow-sm: 0 1px 2px rgba(0,0,0,0.25);
+      --shadow-md: 0 10px 30px rgba(0,0,0,0.3);
+      --shadow-lg: 0 22px 60px rgba(0,0,0,0.45);
+    }
+    *,:before,:after{box-sizing:border-box;margin:0;padding:0}
+    html{-webkit-text-size-adjust:none;text-size-adjust:none;scroll-behavior:smooth;scroll-padding-top:6rem}
+    body{min-height:100dvh;font-family:var(--font-body);font-size:var(--text-base);line-height:1.6;color:var(--color-text);background:var(--color-bg)}
+    img,svg{display:block;max-width:100%;height:auto}
+    a,button{transition:all var(--transition)}
+    button{border:none;background:none;cursor:pointer}
+    a{text-decoration:none;color:inherit}
+    :focus-visible{outline:2px solid var(--color-primary);outline-offset:3px;border-radius:var(--radius-sm)}
+    .skip-link{position:absolute;left:var(--space-4);top:-3rem;background:var(--color-primary);color:var(--color-text-inverse);padding:var(--space-3) var(--space-4);border-radius:var(--radius-full);z-index:200}.skip-link:focus{top:var(--space-4)}
+    .container{width:min(calc(100% - 2rem),var(--content));margin-inline:auto}
+    .section{padding:clamp(var(--space-12),8vw,var(--space-24)) 0}
+    .eyebrow{display:inline-flex;align-items:center;gap:var(--space-2);padding:var(--space-2) var(--space-3);border-radius:var(--radius-full);background:var(--color-primary-highlight);color:var(--color-primary);font-size:var(--text-xs);font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+    .header{position:sticky;top:0;z-index:100;background:color-mix(in oklab, var(--color-bg) 86%, transparent);backdrop-filter:blur(14px);border-bottom:1px solid transparent}
+    .header.scrolled{border-color:var(--color-divider);box-shadow:var(--shadow-sm)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:var(--space-4);padding:var(--space-4) 0}
+    .brand{display:flex;align-items:center;gap:var(--space-3);font-weight:700}
+    .brand-mark{width:2.75rem;height:2.75rem;padding:.55rem;border-radius:.9rem;background:linear-gradient(135deg,var(--color-primary),color-mix(in oklab,var(--color-primary) 45%,white));color:var(--color-text-inverse);box-shadow:var(--shadow-md)}
+    .brand-text strong{display:block;font-size:var(--text-sm)}
+    .brand-text span{display:block;color:var(--color-text-muted);font-size:var(--text-xs)}
+    .nav-links{display:flex;align-items:center;gap:var(--space-5)}
+    .nav-links a{font-size:var(--text-sm);color:var(--color-text-muted)}
+    .nav-actions{display:flex;align-items:center;gap:var(--space-3)}
+    .theme-toggle{width:2.8rem;height:2.8rem;display:grid;place-items:center;border:1px solid var(--color-border);border-radius:var(--radius-full);background:var(--color-surface)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:.65rem;min-height:3rem;padding:.9rem 1.2rem;border-radius:var(--radius-full);font-size:var(--text-sm);font-weight:600;border:1px solid transparent}
+    .btn-primary{background:var(--color-primary);color:var(--color-text-inverse);box-shadow:var(--shadow-md)}
+    .btn-primary:hover{background:var(--color-primary-hover);transform:translateY(-1px)}
+    .btn-secondary{border-color:var(--color-border);background:var(--color-surface)}
+    .btn-secondary:hover{border-color:var(--color-primary);color:var(--color-primary)}
+    .hero{padding:clamp(var(--space-12),9vw,var(--space-24)) 0 var(--space-16)}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:var(--space-10);align-items:center}
+    .hero-copy h1{font-family:var(--font-display);font-size:clamp(2.6rem,5vw,5.75rem);line-height:.96;letter-spacing:-.04em;max-width:11ch;margin-top:var(--space-5)}
+    .hero-copy p{margin-top:var(--space-5);max-width:60ch;color:var(--color-text-muted)}
+    .hero-actions,.cta-actions{display:flex;flex-wrap:wrap;gap:var(--space-3);margin-top:var(--space-6)}
+    .mini-proof{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-4);margin-top:var(--space-8)}
+    .mini-proof div{padding:var(--space-4);background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg)}
+    .mini-proof strong{display:block;font-size:var(--text-lg)}
+    .mini-proof span{color:var(--color-text-muted);font-size:var(--text-xs)}
+    .showcase{position:relative;background:var(--color-surface);border:1px solid var(--color-border);border-radius:calc(var(--radius-xl) + .5rem);padding:var(--space-4);box-shadow:var(--shadow-lg);overflow:hidden}
+    .showcase:before{content:"";position:absolute;inset:auto -20% 68% auto;width:17rem;height:17rem;background:radial-gradient(circle, color-mix(in oklab,var(--color-primary) 23%, transparent), transparent 72%);filter:blur(18px)}
+    .browser-bar{display:flex;align-items:center;justify-content:space-between;gap:var(--space-3);padding:var(--space-3);background:var(--color-surface-offset);border-radius:var(--radius-lg)}
+    .dots{display:flex;gap:.4rem}.dots span{width:.7rem;height:.7rem;border-radius:50%;background:var(--color-text-faint)}
+    .browser-url{font-size:var(--text-xs);color:var(--color-text-muted)}
+    .demo-card{margin-top:var(--space-4);background:var(--color-surface-2);border:1px solid var(--color-divider);border-radius:calc(var(--radius-xl) - .2rem);overflow:hidden}
+    .demo-hero{aspect-ratio:16/10;background:url('https://picsum.photos/seed/influencerkit/960/700') center/cover no-repeat;position:relative}
+    .demo-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(0,0,0,.45))}
+    .demo-overlay{position:absolute;left:var(--space-4);right:var(--space-4);bottom:var(--space-4);display:flex;justify-content:space-between;align-items:end;gap:var(--space-4);z-index:1;color:#fff}
+    .chip-row{display:flex;flex-wrap:wrap;gap:var(--space-2);margin-top:var(--space-4)}
+    .chip{padding:.45rem .7rem;border-radius:var(--radius-full);background:var(--color-primary-highlight);color:var(--color-primary);font-size:var(--text-xs);font-weight:700}
+    .demo-body{padding:var(--space-5)}
+    .grid-2,.offer-grid,.pricing-grid,.review-grid,.trust-grid,.audience-grid,.process-grid,.faq-grid,.footer-grid{display:grid;gap:var(--space-6)}
+    .grid-2{grid-template-columns:repeat(2,1fr)}
+    .section-head{display:flex;flex-direction:column;gap:var(--space-3);margin-bottom:var(--space-8)}
+    .section-head h2{font-family:var(--font-display);font-size:var(--text-2xl);line-height:1}
+    .section-head p{max-width:62ch;color:var(--color-text-muted)}
+    .card{padding:var(--space-6);background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-xl);box-shadow:var(--shadow-sm)}
+    .card h3{font-size:var(--text-lg);line-height:1.2;margin-bottom:var(--space-3)}
+    .card p,.card li{color:var(--color-text-muted)}
+    .card ul{list-style:none;display:grid;gap:var(--space-3);margin-top:var(--space-4)}
+    .card li{padding-left:1.4rem;position:relative}
+    .card li:before{content:"";position:absolute;left:0;top:.68rem;width:.5rem;height:.5rem;border-radius:50%;background:var(--color-primary)}
+    .audience-grid,.offer-grid,.trust-grid,.process-grid,.faq-grid,.review-grid{grid-template-columns:repeat(3,1fr)}
+    .pricing-grid{grid-template-columns:repeat(3,1fr);align-items:stretch}
+    .price-card{position:relative;padding:var(--space-6);background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-xl);box-shadow:var(--shadow-sm)}
+    .price-card.featured{background:linear-gradient(180deg,color-mix(in oklab,var(--color-primary) 6%, var(--color-surface)),var(--color-surface));border-color:color-mix(in oklab,var(--color-primary) 25%,var(--color-border));box-shadow:var(--shadow-lg);transform:translateY(-.35rem)}
+    .price-tag{font-size:clamp(2rem,3.5vw,3.2rem);font-weight:700;line-height:1;margin:var(--space-4) 0}
+    .badge{display:inline-flex;padding:.45rem .8rem;border-radius:var(--radius-full);font-size:var(--text-xs);font-weight:700;background:var(--color-primary-highlight);color:var(--color-primary)}
+    .review{display:flex;flex-direction:column;justify-content:space-between;min-height:100%}
+    .review strong{display:block;margin-top:var(--space-5)}
+    .kicker{color:var(--color-text-muted);font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.08em}
+    .comparison{overflow:auto;border:1px solid var(--color-border);border-radius:var(--radius-xl);background:var(--color-surface);box-shadow:var(--shadow-sm)}
+    table{width:100%;border-collapse:collapse;min-width:700px}
+    th,td{text-align:left;padding:1rem 1.1rem;border-bottom:1px solid var(--color-divider);vertical-align:top}
+    th{font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.08em;color:var(--color-text-muted);background:var(--color-surface-offset)}
+    .cta-band{padding:var(--space-10);background:linear-gradient(135deg,color-mix(in oklab,var(--color-primary) 12%, var(--color-surface)),var(--color-surface));border:1px solid color-mix(in oklab,var(--color-primary) 20%,var(--color-border));border-radius:calc(var(--radius-xl) + .35rem);box-shadow:var(--shadow-lg)}
+    .faq-item{padding:var(--space-5);background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-xl)}
+    .faq-item p{margin-top:var(--space-3);color:var(--color-text-muted)}
+    .footer{padding:var(--space-12) 0 var(--space-8);border-top:1px solid var(--color-divider)}
+    .footer-grid{grid-template-columns:1.2fr .8fr .8fr}
+    .footer a{color:var(--color-text-muted)}
+    .muted{color:var(--color-text-muted)}
+    .mobile-nav-btn{display:none}
+    @media (max-width: 980px){
+      .hero-grid,.grid-2,.audience-grid,.offer-grid,.trust-grid,.process-grid,.pricing-grid,.review-grid,.faq-grid,.footer-grid{grid-template-columns:1fr}
+      .price-card.featured{transform:none}
+      .mini-proof{grid-template-columns:1fr}
+      .nav-links{display:none;position:absolute;left:1rem;right:1rem;top:calc(100% + .6rem);padding:var(--space-4);background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-xl);box-shadow:var(--shadow-lg);flex-direction:column;align-items:flex-start}
+      .nav-links.open{display:flex}
+      .mobile-nav-btn{display:grid;place-items:center;width:2.8rem;height:2.8rem;border:1px solid var(--color-border);border-radius:var(--radius-full);background:var(--color-surface)}
+    }
+    @media (max-width: 640px){
+      .container{width:min(calc(100% - 1.1rem),var(--content))}
+      .nav-actions .btn{display:none}
+      .hero-copy h1{max-width:12ch}
+      .demo-overlay{flex-direction:column;align-items:flex-start}
+      .cta-band{padding:var(--space-6)}
+    }
+    @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="header" id="site-header">
+    <div class="container nav">
+      <a href="#top" class="brand" aria-label="Stores by Uday home">
+        <svg class="brand-mark" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <path d="M14 17h36v30c0 2.761-2.239 5-5 5H19c-2.761 0-5-2.239-5-5V17Z" stroke="currentColor" stroke-width="3.2"/>
+          <path d="M22 24c0-5.523 4.477-10 10-10s10 4.477 10 10" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/>
+          <path d="M24 35c2.667 3.333 5.333 5 8 5s5.333-1.667 8-5" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-text"><strong>Stores by Uday</strong><span>Web pages that help profiles convert</span></span>
+      </a>
+      <nav aria-label="Primary">
+        <button class="mobile-nav-btn" id="mobile-menu" aria-label="Open navigation" aria-expanded="false">☰</button>
+        <div class="nav-links" id="nav-links">
+          <a href="#services">Services</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#process">Process</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#faq">FAQ</a>
+        </div>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <a class="btn btn-primary" href="https://instagram.com/storesby.uday" target="_blank" rel="noopener noreferrer">DM on Instagram</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Free demo first · Pay only if you like it</span>
+          <h1>Your Instagram needs a page that closes deals.</h1>
+          <p>I build fast, professional one-page websites for influencers and small businesses so brands, clients, and buyers can see all key details in one place — offers, pricing, reviews, work, contact actions, and direct Instagram DM buttons.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://instagram.com/storesby.uday" target="_blank" rel="noopener noreferrer">Get your free demo</a>
+            <a class="btn btn-secondary" href="#pricing">See pricing</a>
+          </div>
+          <div class="mini-proof" aria-label="Quick business proof points">
+            <div><strong>30+</strong><span>Pages delivered for creators and businesses</span></div>
+            <div><strong>48 hrs</strong><span>Typical free demo turnaround</span></div>
+            <div><strong>₹2,500</strong><span>Starter website price for simple pages</span></div>
+          </div>
+        </div>
+        <div class="showcase" aria-label="Sample showcase preview">
+          <div class="browser-bar">
+            <div class="dots"><span></span><span></span><span></span></div>
+            <div class="browser-url">demo.storesbyuday.site / creator-profile</div>
+          </div>
+          <div class="demo-card">
+            <div class="demo-hero">
+              <div class="demo-overlay">
+                <div>
+                  <div class="kicker">Creator media kit page</div>
+                  <h2 style="font-family: var(--font-display); font-size: var(--text-xl); line-height: 1;">Aanya Verma</h2>
+                  <div class="chip-row"><span class="chip">Fashion reels</span><span class="chip">UGC</span><span class="chip">Delhi based</span></div>
+                </div>
+                <a class="btn btn-primary" href="https://instagram.com/storesby.uday" target="_blank" rel="noopener noreferrer">DM to book</a>
+              </div>
+            </div>
+            <div class="demo-body">
+              <div class="grid-2">
+                <div>
+                  <div class="kicker">What brands see</div>
+                  <div class="chip-row"><span class="chip">120K avg reel views</span><span class="chip">Beauty</span><span class="chip">College audience</span></div>
+                </div>
+                <div>
+                  <div class="kicker">Packages</div>
+                  <div class="chip-row"><span class="chip">1 Reel</span><span class="chip">Story set</span><span class="chip">UGC combo</span></div>
+                </div>
+              </div>
+              <p style="margin-top: 1rem; color: var(--color-text-muted);">This is the kind of simple, polished page that makes collaborations faster because brands do not need to ask the same basic questions again and again.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">What I solve</span>
+          <h2>Make trust visible in one click.</h2>
+          <p>Instagram bios are short, DMs get repetitive, and many creators or small businesses lose leads because their information is scattered. A clean website solves that by showing identity, proof, offers, pricing, and contact actions in a format that feels serious.</p>
+        </div>
+        <div class="audience-grid">
+          <article class="card">
+            <h3>For micro influencers</h3>
+            <p>Ideal for 1K to 10K+ follower creators who want a page that explains their niche, audience, content style, packages, and collaboration options.</p>
+            <ul>
+              <li>Brand-friendly creator profile page</li>
+              <li>Pricing blocks and package details</li>
+              <li>Instagram DM and enquiry CTA</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>For macro creators too</h3>
+            <p>Larger creators can use the same setup as a compact media kit page that is easier to share with agencies and direct brand leads.</p>
+            <ul>
+              <li>Campaign highlights and performance proof</li>
+              <li>Testimonials and previous work sections</li>
+              <li>Priority structure for fast decision making</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>For local businesses</h3>
+            <p>Perfect for businesses with no website who need a modern online presence with contact buttons, service information, and a simple offer page.</p>
+            <ul>
+              <li>WhatsApp, call, and Instagram actions</li>
+              <li>About, services, and trust points</li>
+              <li>Upgrade path to domain and extra pages</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Services</span>
+          <h2>Two simple offers. Clear outcomes.</h2>
+          <p>I keep the offer straightforward so clients understand exactly what they are buying, how the demo works, and what changes when they approve the final version.</p>
+        </div>
+        <div class="offer-grid">
+          <article class="card">
+            <h3>Influencer profile page</h3>
+            <p>A professional mini-site for creators that can include content categories, audience details, average views, collaboration types, rates, brand fit, and a direct DM button.</p>
+          </article>
+          <article class="card">
+            <h3>Business launch page</h3>
+            <p>A fast and polished page for shops, services, and local brands that need contact actions, offer highlights, social proof, and basic company information.</p>
+          </article>
+          <article class="card">
+            <h3>Custom business setup</h3>
+            <p>For clients who want more than a simple page — domain support, expanded sections, product blocks, and a more complete website setup.</p>
+          </article>
+        </div>
+        <div class="comparison" style="margin-top: 2rem;">
+          <table>
+            <thead>
+              <tr>
+                <th>Included sections</th>
+                <th>Creator page</th>
+                <th>Simple business page</th>
+                <th>Custom business setup</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Hero section with strong CTA</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>Instagram / WhatsApp / Call actions</td>
+                <td>Instagram DM</td>
+                <td>Contact buttons</td>
+                <td>Contact buttons + advanced setup</td>
+              </tr>
+              <tr>
+                <td>Pricing or package section</td>
+                <td>Creator pricing</td>
+                <td>Optional</td>
+                <td>Expanded pricing or products</td>
+              </tr>
+              <tr>
+                <td>Domain / extra features</td>
+                <td>Optional handover support</td>
+                <td>Basic page only</td>
+                <td>More custom work included</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Pricing</span>
+          <h2>Low-risk pricing that is easy to say yes to.</h2>
+          <p>The free demo helps clients see the idea first. If they like it, I convert it into the live handover version and share the final page professionally.</p>
+        </div>
+        <div class="pricing-grid">
+          <article class="price-card">
+            <span class="badge">Lead magnet</span>
+            <h3 style="margin-top: 1rem;">Free demo</h3>
+            <div class="price-tag">₹0</div>
+            <p class="muted">Best for first contact and trust building.</p>
+            <ul role="list" style="list-style: none; display: grid; gap: .85rem; margin-top: 1.2rem; color: var(--color-text-muted);">
+              <li>One sample homepage concept</li>
+              <li>Professional layout preview</li>
+              <li>No pressure before approval</li>
+            </ul>
+          </article>
+          <article class="price-card featured">
+            <span class="badge">Most popular</span>
+            <h3 style="margin-top: 1rem;">Simple page</h3>
+            <div class="price-tag">₹2,500</div>
+            <p class="muted">For influencer pages and basic business pages.</p>
+            <ul role="list" style="list-style: none; display: grid; gap: .85rem; margin-top: 1.2rem; color: var(--color-text-muted);">
+              <li>Creator or business one-page website</li>
+              <li>Direct contact or DM button setup</li>
+              <li>Sections for trust, offers, and details</li>
+            </ul>
+          </article>
+          <article class="price-card">
+            <span class="badge">Upgrade</span>
+            <h3 style="margin-top: 1rem;">Custom business site</h3>
+            <div class="price-tag">₹5,000</div>
+            <p class="muted">For extra setup such as domain guidance or expanded features.</p>
+            <ul role="list" style="list-style: none; display: grid; gap: .85rem; margin-top: 1.2rem; color: var(--color-text-muted);">
+              <li>More tailored structure and additions</li>
+              <li>Better fit for product or service pages</li>
+              <li>Ideal when simple is not enough</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="trust">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Why choose me</span>
+          <h2>Built for people who need speed, clarity, and conversion.</h2>
+          <p>This service is designed for solo creators and small businesses that want something affordable, polished, and practical without waiting for a full agency process.</p>
+        </div>
+        <div class="trust-grid">
+          <article class="card">
+            <h3>Free first impression</h3>
+            <p>I remove risk at the start by showing a demo before asking for payment.</p>
+          </article>
+          <article class="card">
+            <h3>Solo and direct</h3>
+            <p>Clients communicate with one person only, which keeps the process faster and clearer.</p>
+          </article>
+          <article class="card">
+            <h3>Made for Instagram selling</h3>
+            <p>The page structure is focused on bios, DMs, and easy action buttons rather than confusing website jargon.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Process</span>
+          <h2>A simple 4-step client journey.</h2>
+          <p>The whole flow is built to be easy for clients who have never bought a website before.</p>
+        </div>
+        <div class="process-grid">
+          <article class="card"><h3>1. DM me</h3><p>They send their profile, niche, work samples, and what they want the page to do.</p></article>
+          <article class="card"><h3>2. I build the free demo</h3><p>I create a polished concept page that shows how their online profile can look.</p></article>
+          <article class="card"><h3>3. They approve the direction</h3><p>If they like the demo, I refine it into the final handover version.</p></article>
+          <article class="card"><h3>4. Final delivery</h3><p>They receive a ready page with their sections, links, and professional presentation.</p></article>
+          <article class="card"><h3>For creators</h3><p>Content niche, view proof, pricing, packages, and brand-fit details are arranged clearly.</p></article>
+          <article class="card"><h3>For businesses</h3><p>Offer, services, contact buttons, and key trust points are made easy to scan quickly.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="reviews">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Client reviews</span>
+          <h2>Feedback that sounds like what buyers care about.</h2>
+          <p>These reviews are positioned to answer the most common doubts — trust, professionalism, speed, and conversion quality.</p>
+        </div>
+        <div class="review-grid">
+          <article class="card review">
+            <p>“I used the page link in my bio and brands finally stopped asking me the same questions in DM. It made me look much more professional.”</p>
+            <strong>Riya K. — Fashion Creator</strong>
+          </article>
+          <article class="card review">
+            <p>“I only wanted a simple website for my salon, but the final page looked clean and premium. Customers could directly contact us without confusion.”</p>
+            <strong>Simran Beauty Studio</strong>
+          </article>
+          <article class="card review">
+            <p>“The best part was the free demo. I could actually see the quality before paying, which made the decision very easy.”</p>
+            <strong>Arjun M. — Lifestyle Creator</strong>
+          </article>
+          <article class="card review">
+            <p>“Fast communication, quick changes, and the design looked much better than the typical basic pages I had seen before.”</p>
+            <strong>Hustle Brew Café</strong>
+          </article>
+          <article class="card review">
+            <p>“For a small price, this solved a real business problem. Now I just send my page instead of typing all my rates every time.”</p>
+            <strong>Neha S. — UGC Creator</strong>
+          </article>
+          <article class="card review">
+            <p>“It felt like a proper media kit website, not just another link page. That difference matters when pitching brands.”</p>
+            <strong>Karan V. — Fitness Creator</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta-band">
+          <span class="eyebrow">Instagram-first service</span>
+          <h2 style="font-family: var(--font-display); font-size: var(--text-2xl); line-height: 1; margin-top: 1rem; max-width: 11ch;">Want a clean page in your bio that makes you look ready for business?</h2>
+          <p style="margin-top: 1rem; max-width: 58ch; color: var(--color-text-muted);">Start with a free demo. If you like the direction, I will turn it into the final version and hand it over professionally.</p>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="https://instagram.com/storesby.uday" target="_blank" rel="noopener noreferrer">DM @storesby.uday</a>
+            <a class="btn btn-secondary" href="mailto:hello@storesbyuday.demo">Schedule your demo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">FAQ</span>
+          <h2>Answering the doubts before they ask.</h2>
+          <p>This section is written to reduce friction when someone visits the page from your Instagram bio.</p>
+        </div>
+        <div class="faq-grid">
+          <article class="faq-item">
+            <h3>Why should I trust you?</h3>
+            <p>I offer a free demo first, keep the pricing transparent, and focus on clear communication so clients can judge the work before committing.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Why not just use a link page?</h3>
+            <p>A full website page gives much more trust because it shows your identity, offers, proof, pricing, and contact actions in a polished format.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Who is this best for?</h3>
+            <p>Micro influencers, UGC creators, local shops, service businesses, and anyone who gets leads from Instagram but lacks a proper web presence.</p>
+          </article>
+          <article class="faq-item">
+            <h3>What do you need from me?</h3>
+            <p>Usually just your profile details, photos, service list, offers, pricing, and the action buttons you want people to click.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Can you make business pages too?</h3>
+            <p>Yes. Simple business pages start at ₹2,500, while custom business website setups with more additions start at ₹5,000.</p>
+          </article>
+          <article class="faq-item">
+            <h3>How do people contact me from the page?</h3>
+            <p>The page can include Instagram DM, WhatsApp, call, email, booking, or other direct action buttons based on the client type.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand" style="align-items:flex-start;">
+          <svg class="brand-mark" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+            <path d="M14 17h36v30c0 2.761-2.239 5-5 5H19c-2.761 0-5-2.239-5-5V17Z" stroke="currentColor" stroke-width="3.2"/>
+            <path d="M22 24c0-5.523 4.477-10 10-10s10 4.477 10 10" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/>
+            <path d="M24 35c2.667 3.333 5.333 5 8 5s5.333-1.667 8-5" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/>
+          </svg>
+          <div>
+            <strong>Stores by Uday</strong>
+            <p class="muted" style="margin-top:.4rem;max-width:34ch;">Professional one-page websites for influencers and small businesses that want more trust, better presentation, and faster enquiries.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="kicker">Links</div>
+        <p style="margin-top: .85rem;"><a href="#services">Services</a></p>
+        <p><a href="#pricing">Pricing</a></p>
+        <p><a href="#reviews">Reviews</a></p>
+      </div>
+      <div>
+        <div class="kicker">Contact</div>
+        <p style="margin-top: .85rem;"><a href="https://instagram.com/storesby.uday" target="_blank" rel="noopener noreferrer">Instagram: @storesby.uday</a></p>
+        <p><a href="mailto:hello@storesbyuday.demo">hello@storesbyuday.demo</a></p>
+        <p class="muted">Solo service · Demo first · Direct communication</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      const root = document.documentElement;
+      const toggle = document.querySelector('[data-theme-toggle]');
+      const mobileBtn = document.getElementById('mobile-menu');
+      const navLinks = document.getElementById('nav-links');
+      const header = document.getElementById('site-header');
+      let theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      const updateIcon = () => {
+        toggle.innerHTML = theme === 'dark'
+          ? '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path></svg>'
+          : '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>';
+        toggle.setAttribute('aria-label', 'Switch to ' + (theme === 'dark' ? 'light' : 'dark') + ' mode');
+      };
+      root.setAttribute('data-theme', theme);
+      updateIcon();
+      toggle.addEventListener('click', () => {
+        theme = theme === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', theme);
+        updateIcon();
+      });
+      mobileBtn && mobileBtn.addEventListener('click', () => {
+        const open = navLinks.classList.toggle('open');
+        mobileBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+      document.querySelectorAll('a[href^="#"]').forEach(link => link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        mobileBtn && mobileBtn.setAttribute('aria-expanded', 'false');
+      }));
+      window.addEventListener('scroll', () => {
+        header.classList.toggle('scrolled', window.scrollY > 10);
+      }, { passive: true });
+    })();
+  </script>
+</body>
+</html>
